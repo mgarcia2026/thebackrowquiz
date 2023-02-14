@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kweez</title>
+  <link href="style.css" rel="stylesheet" type="text/css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sniglet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <script>
+    var score = 0;
+    var first = false;
+    var second = false;
+    var third = false;
+    var fourth = false;
+
+    function one() {
+      if (first == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        first = true;
+        document.getElementById("one").style.backgroundColor = '#FD8A8A';
+      }
+    }
+    function two() {
+      if (first == false) {
+        score++;
+        document.getElementById('score').innerHTML = score;
+        first = true;
+        document.getElementById("two").style.backgroundColor = '#CEEDC7';
+      }
+    }
+    function three() {
+      if (first == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        first = true;
+        document.getElementById("three").style.backgroundColor = '#FD8A8A';
+      }
+    }
+    function four() {
+      if (first == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        first = true;
+        document.getElementById("four").style.backgroundColor = '#FD8A8A';
+      }
+    }
+    function five() {
+      if (second == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        second = true;
+        document.getElementById("five").style.backgroundColor = '#FD8A8A';
+      }
+    }
+    function six() {
+      if (second == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        second = true;
+        document.getElementById("six").style.backgroundColor = '#FD8A8A';
+      }
+    }
+    function seven() {
+      if (second == false) {
+        score++;
+        document.getElementById('score').innerHTML = score;
+        second = true;
+        document.getElementById("seven").style.backgroundColor = '#CEEDC7';
+      }
+    }
+    function eight() {
+      if (second == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        second = true;
+        document.getElementById("eight").style.backgroundColor = '#FD8A8A';
+      }
+    }
+    function nine() {
+      if (third == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        third = true;
+        document.getElementById("nine").style.backgroundColor = '#FD8A8A';
+      }
+    }
+    function ten() {
+      if (third == false) {
+        score++;
+        document.getElementById('score').innerHTML = score;
+        third = true;
+        document.getElementById("ten").style.backgroundColor = '#CEEDC7';
+      }
+    }
+    function eleven() {
+      if (third == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        third = true;
+        document.getElementById("eleven").style.backgroundColor = '#FD8A8A';
+      }
+    }
+    function twelve() {
+      if (third == false) {
+        score--;
+        document.getElementById('score').innerHTML = score;
+        third = true;
+        document.getElementById("twelve").style.backgroundColor = '#FD8A8A';
+      }
+
+    function congrats() {
+      while (score == 3) {
+        document.getElementById("congrats").style.visibility = "visible";
+      }
+    }
+    }
+  </script>
+
+  <style>
+    /*https://colorhunt.co/palette/554994f675a8f29393ffccb3*/
+    body {
+      background-color: #FFF6BD;
+      font-family: 'Sniglet', sans-serif;
+      color: #696464;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: 'Sniglet', sans-serif;
+      color: #202720;
+      font-size: 15px;
+      padding: 5px;
+    }
+
+    h1 {
+      font-family: 'Sniglet', sans-serif;
+      font-size: 40px;
+      text-align: center;
+      color: #FF8787;
+      padding: 15px;
+      text-shadow: 2px 2px #CEEDC7;
+    }
+
+    h2 {
+      font-family: 'Sniglet', sans-serif;
+      font-size: 25px;
+      text-align: left;
+      color: #86C8BC;
+    }
+
+    p {
+      font-family: 'Sniglet', sans-serif;
+      font-size: 15px;
+      text-align: center;
+      color: #696464;
+    }
+
+    .card-body {
+      background-color: #FFD4B2;
+    }
+
+    
+  </style>
+
+</head>
+
+
+<body>
+  <h1>When the CS quiz makes you make one</h1>
+
+
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-sm-4  mb-2 ">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h2>Question 1</h2>
+            <p> Who designed the layout and color scheme of this quiz? </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item btn" onclick="one()" id="one">Martina</li>
+            <li class="list-group-item btn" onclick="two()" id="two">Bibble</li>
+            <li class="list-group-item btn" onclick="three()" id="three">Nico</li>
+            <li class="list-group-item btn" onclick="four()" id="four">Carlos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-4  mb-2 ">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h2>Question 2</h2>
+            <p>What do you call the successive holiday to Valentines celebrated only in Japan ?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item btn" onclick="five()" id="five">Golden Day</li>
+            <li class="list-group-item btn" onclick="six()" id="six" >Heart Day</li>
+            <li class="list-group-item btn" onclick="seven()" id="seven">White Day</li>
+            <li class="list-group-item btn" onclick="eight()" id="eight">idk valentines sucks </li>
+            </ul>
+        </div>
+      </div>
+
+
+      <div class="col-sm-4  mb-2 ">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h2>Question 3</h2>
+            <p>What is life?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item btn" onclick="nine()" id="nine">"To live life to the fullest, is to enjoy every single moment of it to the maximum."</li>
+            <li class="list-group-item btn" onclick="ten()" id="ten"><a href = "congrats.html">Live and Learn by Crush 40</a></li>
+            <li class="list-group-item btn" onclick="eleven()" id="eleven">"Life is about education, adaptation, and enjoyment. When these three step out of balance, life goes into chaos."</li>
+            <li class="list-group-item btn" onclick="twelve()" id="twelve">"Life is about our perspective on the world. To master it's ideals and to learn from our ancestor's past mistakes to better ourselves and the future."</li>
+            </ul>
+        </div> 
+      </div>
+      <h2>Score: <span id="score">0</span></h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+
+  <script src="https://replit.com/public/js/replit-badge.js"  defer></script>
+</body>
+
+</html>
